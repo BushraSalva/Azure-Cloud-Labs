@@ -1,31 +1,39 @@
-# Lab 01: Create Azure Storage Account
+# LAB 01 :Azure File Storage Deployment Lab
 
 ## 🏢 Scenario
-You are the network administrator for your company. You are configuring Azure to help manage your network. You are synchronizing on-premise files to the cloud. The next step is to create an Azure Storage Account with a File Share to sync the files to.
 
-## 🎯 Objectives
-In this lab, your task is to complete the following:
+As a Network Administrator, I configured Microsoft Azure to sync local on-premises files to the cloud. This setup establishes a highly available cloud storage account with an active file share backend to handle enterprise data synchronization.
 
-1. **Create a Storage Account** with these specific configurations:
-   * **Subscription:** `CorpNet Production`
-   * **Resource group:** `CorpNetCloud`
-   * **Storage account name:** `corpnetstorageaccount` (Case-sensitive)
-   * **Region:** `(US) West US2`
-   * **Redundancy:** `Geo-redundant storage (GRS)`
+## 🎯 Lab Objectives & Configurations
 
-2. **Create a File Share** named `corpnetfileshare` inside the newly created storage account.
+The primary objective was to deploy a dedicated storage solution matching these strict corporate guidelines:
+| Configuration Parameter | Assigned Value |
+| :--- | :--- |
+| **Azure Subscription** | CorpNet Production |
+| **Resource Group** | CorpNetCloud |
+| **Storage Account Name** | corpnetstorageaccount *(Case-sensitive)* |
+| **Deployment Region** | (US) West US2 |
+| **Redundancy Tier** | Geo-redundant storage (GRS) |
+| **File Share Name** | corpnetfileshare |
+
+## 🏗️ Technical Execution Process
+
+### Step 1: Provisioning the Storage Account
+
+1. Log into the **Azure Portal** and select **Storage accounts** from the primary services menu.
+2. Click the **+ Create** action button.
+3. Fill out the configuration fields exactly as detailed in the matrix above.
+4. Review the final deployment specifications and click **Create**
    
-## 🛠️ Step-by-Step Instructions
+### Step 2: Creating the File Share
 
-### Step 1: Create the Storage Account
-1. Log into the **Azure Portal**.
-2. Under *Azure Services*, select **Storage accounts**.
-3. Click **+ Create** in the top menu bar.
-4. Fill out the configuration details exactly as specified in the objectives above.
-5. Review and click **Create** to deploy the resource.
+1. Wait for the deployment to finish, then select **Go to resource**.
+2. Navigate to the left menu pane, locate the *Data storage* tier, and select **File shares**.
+3. Click the **+ File share** option at the top.
+4. Input the name `corpnetfileshare`, keep the default performance tiers, and select **Create**.
 
-### Step 2: Create the File Share
-1. When the storage account deployment is complete, select **Go to resource**.
-2. In the left navigation pane under *Data storage*, select **File shares**.
-3. Click **+ File share** at the top.
-4. Name the share `corpnetfileshare` and complete the creation process.
+## 📸 Proof of Completion
+Below is the verification screenshot confirming successful resource creation inside the simulator environment:
+![Lab Completion Screenshot](lab1-1.11png and 1.15png)
+   
+
