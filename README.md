@@ -34,7 +34,6 @@ The primary objective was to deploy a dedicated storage solution matching these 
 
 ## 📸 Proof of Completion
 Below is the verification screenshot confirming successful resource creation inside the simulator environment:
-[![Lab Completion Screenshot](lab1-1.11png and 1.15png)](https://raw.githubusercontent.com/BushraSalva/Azure-Cloud-Labs/refs/heads/main/1.11.PNG)(https://raw.githubusercontent.com/BushraSalva/Azure-Cloud-Labs/refs/heads/main/1.15.PNG)
 
 ### 1. Storage Account Deployment Complete
 ![Storage Account Deployment Complete](1.11.PNG)
